@@ -1,6 +1,6 @@
 * {
-margin: 0,
-padding: 0,
+margin: 0;
+padding: 0;
 box-sizing: border-box
 }
 
@@ -37,22 +37,31 @@ nav{
     justify-content: center;
     justify-content: space-around;
     /* debug */
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .r1-1, .r1-2, .r1-3, .r2-1, .r2-2, .r2-3{
-    /* position: relative;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center; */
-    /* justify-content: space-around; */
-    /* margin: 30px; */
+    justify-content: space-around;
+    margin: 30px;
+    text-align: center;
     /* debug */
     max-width: 300px;
     max-height: 4000px;
 }
 
+.image-container {
+
+    position: relative;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
 .image{
-    width: 300pc;
+    width: 300px;
 }
 
 .r1-1 .image-hover, .r1-2 .image-hover, .r1-3 .image-hover, .r2-1 .image-hover, .r2-2 .image-hover, .r2-3 .image-hover
@@ -71,11 +80,85 @@ nav{
 
 .tag{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    bottom: 100px;
+    left: 2%;
     background-color: red;
     color: white;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 20%;
     font-weight: bold;
 }
+
+.tagreen{
+    position: absolute;
+    bottom: 100px;
+    left: 17%;
+    background-color: rgb(27, 96, 6);
+    color: white;
+    padding: 5px;
+    border-radius: 20%;
+    font-weight: bold;
+}
+
+.tagreen6{
+    position: absolute;
+    bottom: 100px;
+    left: 2%;
+    background-color: rgb(27, 96, 6);
+    color: white;
+    padding: 5px;
+    border-radius: 20%;
+    font-weight: bold;
+}
+
+.r1-1 {
+    position: relative;
+}
+
+.info {
+    margin-top: 10px;
+    /* text-align: center; */
+}
+
+.brand, .name, .price {
+    margin-bottom: 5px;
+    /* display: block; */
+    /* text-align: center; */
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+.discounted-price{
+    color: red;
+}
+
+#foot{
+    margin-top: 100px;
+    min-height: 100px;
+    color: aliceblue;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* debug */
+    background-color: black;
+}
+
+#contfoot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+#icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-brands {
+    color: #fdfdfd;
+}
+
+
